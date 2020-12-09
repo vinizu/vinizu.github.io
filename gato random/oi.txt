@@ -1,0 +1,25 @@
+https:\/\/purr.objects-us-east-1.dream.io\/i\/4FXOM.jpg
+function gerarC() {
+    var url = 'https://random.dog/woof.json';
+    fetch(url)
+    .then(res => res.json())
+    .then(res => inner(res))
+}
+
+function inner(txt) {
+    if(txt.url) {
+        cont.innerHTML = `<img src="${txt.url}">`
+    }
+
+
+const cont = document.getElementsByClassName('container');
+const btn = document.getElementById('botao');
+
+btn.addEventListener('click', () => {
+    gerarC();
+})
+let url = 'https://aws.random.cat/meow';
+fetch(url)
+.then(res => res.json())
+.then(data => {
+console.log(data)}
